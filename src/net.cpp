@@ -1173,6 +1173,7 @@ void MapPort(bool)
 // The first name is used as information source for addrman.
 // The second name should resolve to a list of seed addresses.
 static const char *strMainNetDNSSeed[][2] = {
+    {"45.81.233.177", "140.82.40.228"},
     {NULL, NULL}
 };
 
@@ -1290,7 +1291,7 @@ void ThreadOpenConnections()
         boost::this_thread::interruption_point();
 
         // Add seed nodes if IRC isn't working
-        if (addrman.size()==0 && (GetTime() - nStart > 60) && !fTestNet)
+        if (addrman.size()==0 && (GetTime() - nStart > 10) && !fTestNet)
         {
             std::vector<CAddress> vAdd;
             for (unsigned int i = 0; i < ARRAYLEN(pnSeed); i++)
