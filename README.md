@@ -1,7 +1,7 @@
 Lucycoin integration/staging tree
 ================================
 
-http://www.lucycoin.org
+https://julihost24.de
 
 Copyright (c) 2009-2014 Bitcoin Developers
 Copyright (c) 2011-2014 Litecoin Developers
@@ -75,5 +75,3 @@ Unit tests for the GUI code are in `src/qt/test/`. To compile and run them:
 Social
 -------
 Discord: https://discord.gg/KPtYXaXGMW
-
-# Lucycoin
